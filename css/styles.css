@@ -28,12 +28,11 @@ ul {
 
 header {
     background-color: var(--header-bg-color);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -41,7 +40,6 @@ header {
 .header-box {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
@@ -134,7 +132,6 @@ ul {
 
 .hero-title {
     width: 696px;
-    padding-top: 200px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -155,6 +152,7 @@ footer {
 }
 
 .hero-section {
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
@@ -184,6 +182,9 @@ h3 {
 
 .section-advantages ul {
     display: flex;
+}
+
+.section-advantages {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -241,7 +242,10 @@ img {
 
 .section-work li:not(:last-child) {
     margin-right: 30px;
-    padding-bottom: 188px;
+}
+
+.section-work {
+    padding-bottom: 94px;
 }
 
 .section-advantages,
@@ -250,20 +254,25 @@ img {
 }
 
 .staff-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--secondary-bg-color);
 }
 
 .staff-section ul {
     display: flex;
-    padding-bottom: 94px;
 }
 
 .staff-section li:not(:last-child) {
     margin-right: 30px;
 }
 
+.card-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .staff-section h3 {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -273,20 +282,23 @@ img {
 }
 
 .staff-section p {
-    padding-bottom: 30px;
-
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
 
-footer a.logo {
+footer {
     padding-top: 60px;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 
-address ul {
-    padding-bottom: 60px;
+footer a.logo {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.address-footer li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .card {
@@ -295,9 +307,10 @@ address ul {
 }
 
 .portfolio {
-    padding-bottom: 24px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     
-    background-color: var(--primary-bg-color);
+    background-color: var(--header-bg-color);
 }
 
 button {
@@ -325,7 +338,6 @@ button:focus {
 .buttons-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -336,7 +348,6 @@ button:focus {
 .works-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .portfolio .card {
@@ -353,14 +364,12 @@ button:focus {
     margin-bottom: 0;
 }
 
-.works-list img {
-    margin-bottom: 20px;
+.works-description {
+    padding: 20px 24px;
 }
 
 .portfolio h2 {
     margin-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -369,10 +378,6 @@ button:focus {
 }
 
 .portfolio p {
-    margin-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
